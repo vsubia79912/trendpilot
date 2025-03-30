@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TrendPilot Demo</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; background: #fefbee; }
+    h1 { color: #f99552; }
+    .box { border: 1px solid #ccc; border-radius: 10px; padding: 1rem; margin-bottom: 1rem; background: #fff; }
+    .video { margin-bottom: 0.5rem; }
+    .label { font-weight: bold; color: #5b5e59; }
+  </style>
+</head>
+<body>
+  <h1>TrendPilot - TikTok Integration Demo</h1>
+
+  <div class="box">
+    <p class="label">Step 1: User logs in via TikTok</p>
+    <button onclick="alert('Redirecting to TikTok OAuth...')">Login with TikTok</button>
+    <p><em>User is redirected back to:</em><br><code>https://vsubia79912.github.io/trendpilot/auth/callback</code></p>
+  </div>
+
+  <div class="box">
+    <p class="label">Step 2: Mocked TikTok User Info</p>
+    <img src="https://i.pravatar.cc/100" alt="User Avatar" />
+    <p><strong>Username:</strong> @demo_creator</p>
+    <p><strong>Display Name:</strong> Demo Creator</p>
+  </div>
+
+  <div class="box">
+    <p class="label">Step 3: User Stats (from TikTok)</p>
+    <ul>
+      <li><strong>Followers:</strong> 12,540</li>
+      <li><strong>Likes:</strong> 48,932</li>
+      <li><strong>Videos:</strong> 37</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <p class="label">Step 4: List of Videos</p>
+    <div class="video">🎥 How to go viral in 2024</div>
+    <div class="video">🎥 Trending TikTok sound mashup</div>
+    <div class="video">🎥 3 tips to boost your reach</div>
+  </div>
+
+  <div class="box">
+    <p class="label">Step 5: Webhook Event Received</p>
+    <p>✅ New video posted! Webhook triggered.</p>
+    <p><code>https://webhook.site/your-webhook-url</code></p>
+  </div>
+</body>
+</html>
